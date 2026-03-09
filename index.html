@@ -2,559 +2,714 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenGradient | The Network for Open Intelligence</title>
-    <meta name="description"
-        content="OpenGradient is the AI-native decentralized infrastructure for verifiable and confidential computing. Explore on-chain AI models, MemSync, BitQuant, Digital Twins, and more.">
-    <meta name="author" content="OpenGradient">
-    <meta property="og:title" content="OpenGradient | The Network for Open Intelligence">
-    <meta property="og:description"
-        content="OpenGradient is bringing the world's AI compute onchain for verifiability and transparency.">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenGradient — The Network for Open Intelligence</title>
+  <meta name="description"
+    content="OpenGradient is the AI-native financial infrastructure for verifiable and confidential computing. Bringing the world's AI compute onchain." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">
-                <span class="logo-icon">◆</span>
-                <span class="logo-text">OpenGradient</span>
-            </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#about">About</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#technology">Technology</a></li>
-                <li><a href="#backers">Backers</a></li>
-                <li><a href="#community">Community</a></li>
-            </ul>
-            <a href="https://docs.opengradient.ai/" target="_blank" class="nav-cta">Explore Docs</a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <canvas id="particleCanvas"></canvas>
-        <div class="hero-glow"></div>
-        <div class="hero-content">
-            <div class="hero-badge animate-in">
-                <span class="badge-dot"></span>
-                EVM Compatible · Decentralized AI Infrastructure
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="https://www.opengradient.ai/" target="_blank" class="nav-logo">
+        <div class="logo-mark"></div>
+        <span class="logo-text">OpenGradient</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#products">Products</a></li>
+        <li><a href="#ecosystem">Ecosystem</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="https://docs.opengradient.ai/" target="_blank">Docs</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="https://hub.opengradient.ai/" target="_blank" class="btn btn-outline">Model Hub</a>
+        <a href="https://docs.opengradient.ai/" target="_blank" class="btn btn-primary">Get Started</a>
+      </div>
+      <button class="nav-hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== MOBILE NAV ========== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#products" class="mobile-link">Products</a>
+    <a href="#ecosystem" class="mobile-link">Ecosystem</a>
+    <a href="#research" class="mobile-link">Research</a>
+    <a href="#community" class="mobile-link">Community</a>
+    <a href="https://docs.opengradient.ai/" target="_blank" class="mobile-link">Docs</a>
+    <a href="https://hub.opengradient.ai/" target="_blank" class="mobile-link highlight">Model Hub</a>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+    <div class="hero-glow glow-3"></div>
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-hills" aria-hidden="true">
+      <div class="hill hill-1"></div>
+      <div class="hill hill-2"></div>
+      <div class="hill hill-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        EVM Compatible &nbsp;·&nbsp; zkML Proofs &nbsp;·&nbsp; TEE Attestations
+      </div>
+      <h1 class="hero-title">
+        The Network for<br /><span class="gradient-text">Open Intelligence</span>
+      </h1>
+      <p class="hero-subtitle">
+        OpenGradient is bringing the world's AI compute onchain for<br class="desktop-only" />
+        verifiability, transparency, and confidential computing.
+      </p>
+      <div class="hero-actions">
+        <a href="https://docs.opengradient.ai/" target="_blank" class="btn btn-hero-primary">
+          <span>Explore the Network</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="https://hub.opengradient.ai/" target="_blank" class="btn btn-hero-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="3" width="20" height="14" rx="2" />
+            <path d="M8 21h8M12 17v4" />
+          </svg>
+          Model Hub
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">10K+</span>
+          <span class="stat-label">AI Models</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">zkML</span>
+          <span class="stat-label">Verified Proofs</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">EVM</span>
+          <span class="stat-label">Compatible</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== PRODUCTS ========== -->
+  <section class="products-section" id="products">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Our Products</span>
+        <h2 class="section-title">The Full Intelligence Stack</h2>
+        <p class="section-subtitle">Every layer needed to build, deploy, and monetize verifiable AI — all onchain.</p>
+      </div>
+      <div class="products-grid">
+
+        <div class="product-card product-card--featured">
+          <div class="product-card-glow"></div>
+          <div class="product-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M12 2v3M12 19v3M2 12h3M19 12h3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M17.66 6.34l-2.12 2.12M6.34 17.66l-2.12 2.12" />
+            </svg>
+          </div>
+          <div class="product-content">
+            <span class="product-tag">Core Infrastructure</span>
+            <h3 class="product-name">OpenGradient Network</h3>
+            <p class="product-desc">The world's largest decentralized AI model repository. Verifiable AI inferences
+              secured by zkML proofs and TEE attestations — fully EVM compatible.</p>
+            <div class="product-features">
+              <span class="feature-chip">zkML Proofs</span>
+              <span class="feature-chip">TEE Attestations</span>
+              <span class="feature-chip">EVM Native</span>
             </div>
-            <h1 class="hero-title animate-in">
-                The Network for<br>
-                <span class="gradient-text">Open Intelligence</span>
-            </h1>
-            <p class="hero-subtitle animate-in" id="heroSubtitle">
-                Bringing the world's AI compute onchain for verifiability, transparency, and open access.
-                The decentralized infrastructure powering the next generation of AI applications.
+          </div>
+          <a href="https://www.opengradient.ai/" target="_blank" class="product-link">Learn More <svg width="14"
+              height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg></a>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8M12 17v4" />
+            </svg>
+          </div>
+          <div class="product-content">
+            <span class="product-tag">Model Repository</span>
+            <h3 class="product-name">Model Hub</h3>
+            <p class="product-desc">Explore thousands of AI models hosted on-chain. Run verifiable inferences with
+              cryptographic guarantees on any model.</p>
+            <div class="product-features">
+              <span class="feature-chip">Thousands of Models</span>
+              <span class="feature-chip">On-Chain</span>
+            </div>
+          </div>
+          <a href="https://hub.opengradient.ai/" target="_blank" class="product-link">Explore Hub <svg width="14"
+              height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg></a>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+          </div>
+          <div class="product-content">
+            <span class="product-tag">Developer Tools</span>
+            <h3 class="product-name">On-Chain AI SDK</h3>
+            <p class="product-desc">Build verifiable on-chain AI agents, workflows, and apps with our comprehensive SDK.
+              Production-ready tooling for AI applications.</p>
+            <div class="product-features">
+              <span class="feature-chip">AI Agents</span>
+              <span class="feature-chip">Workflows</span>
+            </div>
+          </div>
+          <a href="https://docs.opengradient.ai/developers/sdk/" target="_blank" class="product-link">Read Docs <svg
+              width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg></a>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <ellipse cx="12" cy="5" rx="9" ry="3" />
+              <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" />
+              <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" />
+            </svg>
+          </div>
+          <div class="product-content">
+            <span class="product-tag">AI Memory</span>
+            <h3 class="product-name">MemSync</h3>
+            <p class="product-desc">Unified AI memory for all of your apps. Persistent, personalized context that
+              follows you across every AI-powered experience.</p>
+            <div class="product-features">
+              <span class="feature-chip">Persistent Memory</span>
+              <span class="feature-chip">Cross-App</span>
+            </div>
+          </div>
+          <a href="https://memsync.ai/" target="_blank" class="product-link">Try MemSync <svg width="14" height="14"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg></a>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <div class="product-content">
+            <span class="product-tag">Digital Twins</span>
+            <h3 class="product-name">Twin.fun</h3>
+            <p class="product-desc">Talk to AI digital replicas of your favorite influencers. Trade AI minds in the
+              first-ever marketplace for digital personalities.</p>
+            <div class="product-features">
+              <span class="feature-chip">AI Replicas</span>
+              <span class="feature-chip">Tradeable</span>
+            </div>
+          </div>
+          <a href="https://www.twin.fun/" target="_blank" class="product-link">Explore Twins <svg width="14" height="14"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg></a>
+        </div>
+
+        <div class="product-card product-card--accent">
+          <div class="product-card-glow product-card-glow--accent"></div>
+          <div class="product-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+            </svg>
+          </div>
+          <div class="product-content">
+            <span class="product-tag">DeFi AI</span>
+            <h3 class="product-name">BitQuant</h3>
+            <p class="product-desc">Your personal AI quantitative analyst. DeFi analytics, trading intelligence, and
+              portfolio management powered by verifiable AI models.</p>
+            <div class="product-features">
+              <span class="feature-chip">DeFi Analytics</span>
+              <span class="feature-chip">AI Trading</span>
+              <span class="feature-chip">Portfolio Mgmt</span>
+            </div>
+          </div>
+          <a href="https://www.bitquant.io/" target="_blank" class="product-link">Launch BitQuant <svg width="14"
+              height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ECOSYSTEM ========== -->
+  <section class="ecosystem-section" id="ecosystem">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">The Architecture</span>
+        <h2 class="section-title">Verifiability at Every Layer</h2>
+        <p class="section-subtitle">A complete stack from cryptographic proofs to consumer-facing AI products.</p>
+      </div>
+      <div class="ecosystem-flow">
+        <div class="flow-step">
+          <div class="flow-number">01</div>
+          <div class="flow-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <h3>Verifiable Inference</h3>
+          <p>Every AI inference is backed by zkML cryptographic proofs or TEE hardware attestations — no trusting black
+            boxes.</p>
+        </div>
+        <div class="flow-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </div>
+        <div class="flow-step">
+          <div class="flow-number">02</div>
+          <div class="flow-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8M12 17v4" />
+            </svg>
+          </div>
+          <h3>On-Chain Model Hub</h3>
+          <p>Host and discover thousands of AI models in the world's largest decentralized model repository, fully
+            on-chain.</p>
+        </div>
+        <div class="flow-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </div>
+        <div class="flow-step">
+          <div class="flow-number">03</div>
+          <div class="flow-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+          </div>
+          <h3>Developer SDK</h3>
+          <p>Build AI agents, workflows, and dApps with our comprehensive SDK. From powerful tools to production-ready
+            APIs.</p>
+        </div>
+        <div class="flow-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </div>
+        <div class="flow-step">
+          <div class="flow-number">04</div>
+          <div class="flow-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+            </svg>
+          </div>
+          <h3>Consumer Products</h3>
+          <p>BitQuant, MemSync, and Twin.fun — real products that showcase what verifiable AI can do for everyday users.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SHOWCASE CARDS ========== -->
+  <section class="showcase-section">
+    <div class="section-container">
+      <div class="showcase-grid">
+
+        <div class="showcase-card showcase-card--bitquant">
+          <div class="showcase-card-content">
+            <div class="showcase-label">DeFi AI Agent</div>
+            <h3>BitQuant</h3>
+            <p>Your personal AI quant analyst. Deep DeFi analytics, portfolio intelligence, and on-chain trading
+              insights powered by verifiable AI.</p>
+            <div class="showcase-links">
+              <a href="https://www.bitquant.io/" target="_blank" class="showcase-btn">Launch App</a>
+              <a href="https://github.com/OpenGradient/BitQuant-Subnet" target="_blank" class="showcase-btn-ghost">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                Subnet
+              </a>
+            </div>
+          </div>
+          <div class="showcase-visual">
+            <div class="chart-bars">
+              <div class="bar" style="--h:40%"></div>
+              <div class="bar" style="--h:65%"></div>
+              <div class="bar" style="--h:45%"></div>
+              <div class="bar" style="--h:80%"></div>
+              <div class="bar" style="--h:55%"></div>
+              <div class="bar" style="--h:90%"></div>
+              <div class="bar" style="--h:70%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="showcase-card showcase-card--memsync">
+          <div class="showcase-card-content">
+            <div class="showcase-label">Unified AI Memory</div>
+            <h3>MemSync</h3>
+            <p>The memory layer for AI. Your preferences, context, and history follow you seamlessly across every
+              AI-powered app.</p>
+            <div class="showcase-links">
+              <a href="https://memsync.ai/" target="_blank" class="showcase-btn">Visit Site</a>
+              <a href="https://chromewebstore.google.com/detail/memsync/ekhglfoplnmigdhkifhegcdjmjkbljom"
+                target="_blank" class="showcase-btn-ghost">Chrome Extension</a>
+            </div>
+          </div>
+          <div class="showcase-visual memory-visual-wrap">
+            <div class="mem-circle mem-c1"></div>
+            <div class="mem-circle mem-c2"></div>
+            <div class="mem-circle mem-c3"></div>
+            <div class="mem-center-dot"></div>
+          </div>
+        </div>
+
+        <div class="showcase-card showcase-card--twin">
+          <div class="showcase-card-content">
+            <div class="showcase-label">Digital Twins</div>
+            <h3>Twin.fun</h3>
+            <p>Trade AI minds. The first marketplace for AI digital replicas of your favorite creators and influencers.
             </p>
-            <div class="hero-stats animate-in">
-                <div class="stat">
-                    <span class="stat-number" data-target="5000">0</span>+
-                    <span class="stat-label">AI Models</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-number" data-target="100">0</span>K+
-                    <span class="stat-label">Inferences</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-number" data-target="50">0</span>+
-                    <span class="stat-label">Integrations</span>
-                </div>
+            <div class="showcase-links">
+              <a href="https://www.twin.fun/" target="_blank" class="showcase-btn">Explore Twins</a>
             </div>
-            <div class="hero-actions animate-in">
-                <a href="https://hub.opengradient.ai/" target="_blank" class="btn btn-primary">
-                    <span>Explore Model Hub</span>
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </a>
-                <a href="https://docs.opengradient.ai/" target="_blank" class="btn btn-secondary">
-                    <span>Read Documentation</span>
-                </a>
-            </div>
+          </div>
+          <div class="showcase-visual twin-visual-wrap">
+            <div class="twin-avatar ta-1"><span>A</span></div>
+            <div class="twin-avatar ta-2"><span>B</span></div>
+            <div class="twin-avatar ta-3"><span>C</span></div>
+          </div>
         </div>
-        <div class="hero-scroll">
-            <div class="scroll-indicator">
-                <div class="scroll-dot"></div>
-            </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RESEARCH ========== -->
+  <section class="research-section" id="research">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Research &amp; Insights</span>
+        <h2 class="section-title">What's New</h2>
+        <p class="section-subtitle">Breakthroughs in AI memory, contextual safety, and open standards.</p>
+      </div>
+      <div class="research-grid">
+
+        <a href="https://www.opengradient.ai/blog/x402-opengradient-upgrade-trustless-verifiable-inference"
+          target="_blank" class="research-card research-card--featured">
+          <div class="research-tag-pill">Latest</div>
+          <h3>OpenGradient's x402 Upgrade: Trustless, Verifiable AI Inference Is Here</h3>
+          <p>A landmark upgrade enabling fully trustless and verifiable AI inference on the OpenGradient network.</p>
+          <span class="research-cta">Read Now →</span>
+        </a>
+
+        <a href="https://www.opengradient.ai/blog/verifiable-agents-robotics-execution-layer" target="_blank"
+          class="research-card">
+          <div class="research-tag-pill">Robotics</div>
+          <h3>From Black Boxes to Verifiable Agents: The Missing Execution Layer for Robotics</h3>
+          <p>Exploring how verifiable AI can unlock the next generation of autonomous robotic systems.</p>
+          <span class="research-cta">Read Now →</span>
+        </a>
+
+        <a href="https://www.opengradient.ai/blog/trading-ai-minds-an-introduction-to-twin-fun" target="_blank"
+          class="research-card">
+          <div class="research-tag-pill">Twin.fun</div>
+          <h3>Trading AI Minds: An Introduction to Twin.fun</h3>
+          <p>The first marketplace for trading AI digital replicas — how it works and why it matters.</p>
+          <span class="research-cta">Read Now →</span>
+        </a>
+
+        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5035111" target="_blank" class="research-card">
+          <div class="research-tag-pill">Whitepaper</div>
+          <h3>OpenGradient Whitepaper: Optimizing AMM Trading Liquidity Pools with On-Chain ML</h3>
+          <p>Using on-chain ML models to optimize automated market maker liquidity pools.</p>
+          <span class="research-cta">Read Paper →</span>
+        </a>
+
+        <a href="https://www.opengradient.ai/blog/building-better-ai-memory-the-architecture-behind-memsync"
+          target="_blank" class="research-card">
+          <div class="research-tag-pill">Architecture</div>
+          <h3>MemSync Design: State-of-the-Art AI Memory Research</h3>
+          <p>Research insights in developing the architecture behind MemSync's unified AI memory system.</p>
+          <span class="research-cta">Read Now →</span>
+        </a>
+
+        <a href="https://www.opengradient.ai/blog/real-verticals-in-applied-ai-web3" target="_blank"
+          class="research-card">
+          <div class="research-tag-pill">Web3 AI</div>
+          <h3>10 Verticals of Applied AI in Web3</h3>
+          <p>Exploring 10 key use-cases of AI powered by OpenGradient for Web3 applications and beyond.</p>
+          <span class="research-cta">Read Now →</span>
+        </a>
+
+      </div>
+      <div class="research-cta-row">
+        <a href="https://www.opengradient.ai/blog" target="_blank" class="btn btn-primary">View All Posts</a>
+        <a href="https://opengradient.medium.com/" target="_blank" class="btn btn-outline">Read on Medium</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BACKERS ========== -->
+  <section class="backers-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Backers</span>
+        <h2 class="section-title">Backed by the Best</h2>
+        <p class="section-subtitle">World-class builders and visionaries supporting the future of verifiable AI.</p>
+      </div>
+      <div class="backers-grid">
+        <div class="backer-card">
+          <div class="backer-avatar">B</div>
+          <div class="backer-info">
+            <span class="backer-name">Balaji Srinivasan</span>
+            <span class="backer-title">Ex-Coinbase CTO</span>
+          </div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="section about" id="about">
-        <div class="container">
-            <div class="section-header animate-in">
-                <span class="section-tag">About</span>
-                <h2 class="section-title">AI Infrastructure,<br><span class="gradient-text">Reimagined</span></h2>
-                <p class="section-desc">OpenGradient is a vertically-integrated decentralized infrastructure for secure
-                    and verifiable AI execution, agent and application deployment, and AI model hosting.</p>
-            </div>
-            <div class="about-grid">
-                <div class="about-card animate-in">
-                    <div class="about-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <path
-                                d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18" />
-                        </svg>
-                    </div>
-                    <h3>EVM Compatible</h3>
-                    <p>Fully compatible with the Ethereum Virtual Machine, enabling seamless integration with existing
-                        Web3 infrastructure and smart contracts.</p>
-                </div>
-                <div class="about-card animate-in">
-                    <div class="about-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                        </svg>
-                    </div>
-                    <h3>Verifiable AI</h3>
-                    <p>Every inference is cryptographically verifiable through zkML proofs and TEE attestations,
-                        ensuring trustless and transparent AI execution.</p>
-                </div>
-                <div class="about-card animate-in">
-                    <div class="about-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <circle cx="12" cy="12" r="3" />
-                            <path
-                                d="M12 1v4m0 14v4m-9-9h4m14 0h4m-3.3-6.7l-2.8 2.8M6.1 17.9l-2.8 2.8m0-13.4l2.8 2.8m11.8 7.8l2.8 2.8" />
-                        </svg>
-                    </div>
-                    <h3>Decentralized</h3>
-                    <p>World's largest decentralized AI model repository with thousands of models available for
-                        permissionless, on-chain inference.</p>
-                </div>
-                <div class="about-card animate-in">
-                    <div class="about-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                        </svg>
-                    </div>
-                    <h3>Full Stack AI</h3>
-                    <p>From model hosting to SDK to applications — a complete vertical stack for building, deploying,
-                        and running AI on-chain.</p>
-                </div>
-            </div>
+        <div class="backer-card">
+          <div class="backer-avatar">I</div>
+          <div class="backer-info">
+            <span class="backer-name">Illia Polosukhin</span>
+            <span class="backer-title">Transformer Co-Inventor · CoFounder of NEAR</span>
+          </div>
         </div>
-    </section>
-
-    <!-- Products Section -->
-    <section class="section products" id="products">
-        <div class="container">
-            <div class="section-header animate-in">
-                <span class="section-tag">Ecosystem</span>
-                <h2 class="section-title">Products & <span class="gradient-text">Applications</span></h2>
-                <p class="section-desc">A comprehensive suite of tools and applications powering the future of
-                    decentralized AI.</p>
-            </div>
-            <div class="products-grid">
-                <!-- OpenGradient Network -->
-                <div class="product-card product-featured animate-in">
-                    <div class="product-glow"></div>
-                    <div class="product-header">
-                        <div class="product-icon network-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5">
-                                <circle cx="12" cy="12" r="10" />
-                                <path
-                                    d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
-                            </svg>
-                        </div>
-                        <span class="product-badge">Core Infrastructure</span>
-                    </div>
-                    <h3>OpenGradient Network</h3>
-                    <p>The foundational decentralized network for secure, verifiable AI execution. Run ML and LLM
-                        inference with full integrity guarantees powered by zkML and TEE.</p>
-                    <a href="https://www.opengradient.ai/" target="_blank" class="product-link">
-                        Learn More
-                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                            <path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                </div>
-
-                <!-- Model Hub -->
-                <div class="product-card animate-in">
-                    <div class="product-header">
-                        <div class="product-icon hub-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5">
-                                <rect x="2" y="3" width="20" height="14" rx="2" />
-                                <path d="M8 21h8m-4-4v4" />
-                            </svg>
-                        </div>
-                    </div>
-                    <h3>Model Hub</h3>
-                    <p>A permissionless repository supporting all model architectures. Upload, browse, and use thousands
-                        of AI models instantly available for on-chain inference.</p>
-                    <a href="https://hub.opengradient.ai/" target="_blank" class="product-link">
-                        Explore Models
-                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                            <path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                </div>
-
-                <!-- MemSync -->
-                <div class="product-card animate-in">
-                    <div class="product-header">
-                        <div class="product-icon memsync-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5">
-                                <path
-                                    d="M12 2a4 4 0 014 4c0 1.95-1.4 3.58-3.25 3.93L12 22l-.75-12.07A4.001 4.001 0 018 6a4 4 0 014-4z" />
-                                <circle cx="12" cy="6" r="1.5" />
-                            </svg>
-                        </div>
-                    </div>
-                    <h3>MemSync</h3>
-                    <p>Long-term memory layer for AI with persistent context management. Learns who you are and
-                        personalizes every AI app — secure by design, private by default.</p>
-                    <a href="https://memsync.ai/" target="_blank" class="product-link">
-                        Try MemSync
-                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                            <path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                </div>
-
-                <!-- BitQuant -->
-                <div class="product-card animate-in">
-                    <div class="product-header">
-                        <div class="product-icon bitquant-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5">
-                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                            </svg>
-                        </div>
-                    </div>
-                    <h3>BitQuant</h3>
-                    <p>Your personal AI quantitative analyst for DeFi. AI-powered recommendations for analytics, trading
-                        strategies, and portfolio management across decentralized finance.</p>
-                    <a href="https://www.bitquant.io/" target="_blank" class="product-link">
-                        Launch BitQuant
-                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                            <path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                </div>
-
-                <!-- Digital Twins -->
-                <div class="product-card animate-in">
-                    <div class="product-header">
-                        <div class="product-icon twins-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5">
-                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
-                                <circle cx="9" cy="7" r="4" />
-                                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
-                            </svg>
-                        </div>
-                    </div>
-                    <h3>Twin.fun</h3>
-                    <p>Create and interact with AI digital replicas of your favorite influencers and personalities.
-                        Powered by OpenGradient's verifiable inference engine.</p>
-                    <a href="https://www.twin.fun/" target="_blank" class="product-link">
-                        Meet Twins
-                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                            <path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
+        <div class="backer-card">
+          <div class="backer-avatar">S</div>
+          <div class="backer-info">
+            <span class="backer-name">Sandeep Nailwal</span>
+            <span class="backer-title">CEO of Polygon</span>
+          </div>
         </div>
-    </section>
-
-    <!-- Technology Section -->
-    <section class="section technology" id="technology">
-        <div class="container">
-            <div class="section-header animate-in">
-                <span class="section-tag">Under the Hood</span>
-                <h2 class="section-title">Core <span class="gradient-text">Technology</span></h2>
-                <p class="section-desc">Built on cutting-edge cryptographic and AI primitives for trustless, verifiable
-                    intelligence.</p>
-            </div>
-            <div class="tech-grid">
-                <div class="tech-card animate-in">
-                    <div class="tech-number">01</div>
-                    <h3>zkML Proofs</h3>
-                    <p>Zero-Knowledge Machine Learning proofs enable cryptographic verification of AI model inferences
-                        without revealing underlying data or model weights.</p>
-                    <div class="tech-line"></div>
-                </div>
-                <div class="tech-card animate-in">
-                    <div class="tech-number">02</div>
-                    <h3>TEE Attestations</h3>
-                    <p>Trusted Execution Environments provide hardware-level isolation and attestation, ensuring AI
-                        computations are tamper-proof and confidential.</p>
-                    <div class="tech-line"></div>
-                </div>
-                <div class="tech-card animate-in">
-                    <div class="tech-number">03</div>
-                    <h3>On-Chain AI SDK</h3>
-                    <p>A comprehensive Python SDK for building verifiable on-chain AI agents, automated workflows, and
-                        decentralized applications with full integrity guarantees.</p>
-                    <div class="tech-line"></div>
-                </div>
-                <div class="tech-card animate-in">
-                    <div class="tech-number">04</div>
-                    <h3>x402 Protocol</h3>
-                    <p>OpenGradient's latest protocol upgrade enabling trustless, verifiable AI inference — bringing a
-                        new standard for decentralized model execution.</p>
-                    <div class="tech-line"></div>
-                </div>
-            </div>
+        <div class="backer-card">
+          <div class="backer-avatar">E</div>
+          <div class="backer-info">
+            <span class="backer-name">Ekram Ahmed</span>
+            <span class="backer-title">Head of Marketing at Celestia</span>
+          </div>
         </div>
-    </section>
-
-    <!-- Backers Section -->
-    <section class="section backers" id="backers">
-        <div class="container">
-            <div class="section-header animate-in">
-                <span class="section-tag">Investors & Advisors</span>
-                <h2 class="section-title">Backed by <span class="gradient-text">the Best</span></h2>
-                <p class="section-desc">World-class investors and industry leaders supporting the future of verifiable
-                    AI.</p>
-            </div>
-            <div class="backers-grid">
-                <div class="backer-card animate-in">
-                    <div class="backer-avatar">BS</div>
-                    <h4>Balaji Srinivasan</h4>
-                    <p>Ex-Coinbase CTO</p>
-                </div>
-                <div class="backer-card animate-in">
-                    <div class="backer-avatar">IP</div>
-                    <h4>Illia Polosukhin</h4>
-                    <p>Transformer Co-Inventor; CoFounder, NEAR</p>
-                </div>
-                <div class="backer-card animate-in">
-                    <div class="backer-avatar">SN</div>
-                    <h4>Sandeep Nailwal</h4>
-                    <p>CEO of Polygon</p>
-                </div>
-                <div class="backer-card animate-in">
-                    <div class="backer-avatar">EA</div>
-                    <h4>Ekram Ahmed</h4>
-                    <p>Head of Marketing, Celestia</p>
-                </div>
-                <div class="backer-card animate-in">
-                    <div class="backer-avatar">BF</div>
-                    <h4>Bruno Faviero</h4>
-                    <p>CoFounder of Magna</p>
-                </div>
-            </div>
+        <div class="backer-card">
+          <div class="backer-avatar">B</div>
+          <div class="backer-info">
+            <span class="backer-name">Bruno Faviero</span>
+            <span class="backer-title">CoFounder of Magna</span>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Community Section -->
-    <section class="section community" id="community">
-        <div class="container">
-            <div class="section-header animate-in">
-                <span class="section-tag">Get Involved</span>
-                <h2 class="section-title">Join the <span class="gradient-text">Community</span></h2>
-                <p class="section-desc">Connect with builders, researchers, and enthusiasts shaping the future of open
-                    intelligence.</p>
+  <!-- ========== COMMUNITY ========== -->
+  <section class="community-section" id="community">
+    <div class="section-container">
+      <div class="community-inner">
+        <div class="community-glow"></div>
+        <span class="section-tag">Community</span>
+        <h2 class="section-title">Join the Open Intelligence Movement</h2>
+        <p class="community-text">Thousands of builders, researchers, and AI enthusiasts pushing the frontier of
+          verifiable, on-chain AI.</p>
+        <div class="community-links">
+          <a href="https://x.com/OpenGradient" target="_blank" class="community-card">
+            <div class="comm-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.762l7.733-8.835L.734 2.25H7.26l4.266 5.636L18.245 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg></div>
+            <div class="comm-info"><span class="comm-name">X (Twitter)</span><span
+                class="comm-desc">@OpenGradient</span></div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="https://x.com/i/communities/1978779669693362400" target="_blank" class="community-card">
+            <div class="comm-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.762l7.733-8.835L.734 2.25H7.26l4.266 5.636L18.245 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg></div>
+            <div class="comm-info"><span class="comm-name">X Community</span><span class="comm-desc">Join our
+                community</span></div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="https://discord.com/invite/2t5sx5BCpB" target="_blank" class="community-card">
+            <div class="comm-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057.1 18.081.114 18.104.130 18.116a19.873 19.873 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" />
+              </svg></div>
+            <div class="comm-info"><span class="comm-name">Discord</span><span class="comm-desc">Join our server</span>
             </div>
-            <div class="community-grid">
-                <a href="https://x.com/OpenGradient" target="_blank" class="community-card animate-in">
-                    <div class="community-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                        </svg>
-                    </div>
-                    <h4>X (Twitter)</h4>
-                    <p>Follow for the latest updates</p>
-                </a>
-                <a href="https://x.com/i/communities/1978779669693362400" target="_blank"
-                    class="community-card animate-in">
-                    <div class="community-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                        </svg>
-                    </div>
-                    <h4>X Community</h4>
-                    <p>Join the conversation</p>
-                </a>
-                <a href="https://discord.com/invite/2t5sx5BCpB" target="_blank" class="community-card animate-in">
-                    <div class="community-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" />
-                        </svg>
-                    </div>
-                    <h4>Discord</h4>
-                    <p>Chat with the community</p>
-                </a>
-                <a href="https://www.linkedin.com/company/opengradientlabs/" target="_blank"
-                    class="community-card animate-in">
-                    <div class="community-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                        </svg>
-                    </div>
-                    <h4>LinkedIn</h4>
-                    <p>Professional updates</p>
-                </a>
-                <a href="https://github.com/OpenGradient" target="_blank" class="community-card animate-in">
-                    <div class="community-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
-                    </div>
-                    <h4>GitHub</h4>
-                    <p>Open source repositories</p>
-                </a>
-                <a href="https://docs.opengradient.ai/" target="_blank" class="community-card animate-in">
-                    <div class="community-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
-                            <polyline points="14 2 14 8 20 8" />
-                            <line x1="16" y1="13" x2="8" y2="13" />
-                            <line x1="16" y1="17" x2="8" y2="17" />
-                            <polyline points="10 9 9 9 8 9" />
-                        </svg>
-                    </div>
-                    <h4>Documentation</h4>
-                    <p>Technical guides & SDK</p>
-                </a>
-                <a href="https://www.opengradient.ai/blog" target="_blank" class="community-card animate-in">
-                    <div class="community-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" />
-                            <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" />
-                        </svg>
-                    </div>
-                    <h4>Blog</h4>
-                    <p>Latest insights & research</p>
-                </a>
-                <a href="https://opengradient.medium.com/" target="_blank" class="community-card animate-in">
-                    <div class="community-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
-                        </svg>
-                    </div>
-                    <h4>Medium</h4>
-                    <p>Deep dives & articles</p>
-                </a>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/opengradientlabs/" target="_blank" class="community-card">
+            <div class="comm-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg></div>
+            <div class="comm-info"><span class="comm-name">LinkedIn</span><span class="comm-desc">Connect with us</span>
             </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="https://github.com/OpenGradient" target="_blank" class="community-card">
+            <div class="comm-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+              </svg></div>
+            <div class="comm-info"><span class="comm-name">GitHub</span><span class="comm-desc">Open source repos</span>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="https://opengradient.medium.com/" target="_blank" class="community-card">
+            <div class="comm-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
+              </svg></div>
+            <div class="comm-info"><span class="comm-name">Medium</span><span class="comm-desc">Read our blog</span>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- CTA Section -->
-    <section class="section cta-section">
-        <div class="container">
-            <div class="cta-box animate-in">
-                <div class="cta-glow"></div>
-                <h2>Ready to Build with<br><span class="gradient-text">Verifiable AI?</span></h2>
-                <p>Start building on OpenGradient's decentralized infrastructure. Access thousands of models, verifiable
-                    inference, and a comprehensive SDK.</p>
-                <div class="cta-actions">
-                    <a href="https://docs.opengradient.ai/developers/" target="_blank" class="btn btn-primary">
-                        <span>Start Building</span>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                    <a href="https://discord.com/invite/2t5sx5BCpB" target="_blank" class="btn btn-secondary">
-                        <span>Join Discord</span>
-                    </a>
-                </div>
-            </div>
+  <!-- ========== CTA ========== -->
+  <section class="cta-section">
+    <div class="section-container">
+      <div class="cta-inner">
+        <div class="cta-glow"></div>
+        <h2>Ready to Build on Verifiable AI?</h2>
+        <p>Join thousands of developers building the next generation of AI-powered applications — all with cryptographic
+          guarantees.</p>
+        <div class="cta-actions">
+          <a href="https://docs.opengradient.ai/" target="_blank" class="btn btn-cta-primary">Read the Docs</a>
+          <a href="https://hub.opengradient.ai/" target="_blank" class="btn btn-cta-secondary">Explore Models</a>
+          <a href="https://discord.com/invite/2t5sx5BCpB" target="_blank" class="btn btn-cta-ghost">Join Discord</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <a href="#hero" class="nav-logo">
-                        <span class="logo-icon">◆</span>
-                        <span class="logo-text">OpenGradient</span>
-                    </a>
-                    <p>The Network for Open Intelligence.<br>Verifiable, decentralized AI infrastructure.</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-col">
-                        <h5>Products</h5>
-                        <a href="https://hub.opengradient.ai/" target="_blank">Model Hub</a>
-                        <a href="https://memsync.ai/" target="_blank">MemSync</a>
-                        <a href="https://www.bitquant.io/" target="_blank">BitQuant</a>
-                        <a href="https://www.twin.fun/" target="_blank">Twin.fun</a>
-                    </div>
-                    <div class="footer-col">
-                        <h5>Developers</h5>
-                        <a href="https://docs.opengradient.ai/" target="_blank">Documentation</a>
-                        <a href="https://github.com/OpenGradient" target="_blank">GitHub</a>
-                        <a href="https://docs.opengradient.ai/developers/sdk.html" target="_blank">Python SDK</a>
-                        <a href="https://explorer.opengradient.ai" target="_blank">Block Explorer</a>
-                    </div>
-                    <div class="footer-col">
-                        <h5>Community</h5>
-                        <a href="https://x.com/OpenGradient" target="_blank">X (Twitter)</a>
-                        <a href="https://discord.com/invite/2t5sx5BCpB" target="_blank">Discord</a>
-                        <a href="https://www.linkedin.com/company/opengradientlabs/" target="_blank">LinkedIn</a>
-                        <a href="https://www.opengradient.ai/blog" target="_blank">Blog</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 OpenGradient. All rights reserved.</p>
-                <div class="footer-social">
-                    <a href="https://x.com/OpenGradient" target="_blank" aria-label="Twitter">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                        </svg>
-                    </a>
-                    <a href="https://discord.com/invite/2t5sx5BCpB" target="_blank" aria-label="Discord">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" />
-                        </svg>
-                    </a>
-                    <a href="https://github.com/OpenGradient" target="_blank" aria-label="GitHub">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="https://www.opengradient.ai/" target="_blank" class="nav-logo footer-logo">
+          <div class="logo-mark"></div>
+          <span class="logo-text">OpenGradient</span>
+        </a>
+        <p class="footer-tagline">The Network for Open Intelligence.<br />AI compute onchain — verifiable, transparent,
+          and confidential.</p>
+        <div class="footer-socials">
+          <a href="https://x.com/OpenGradient" target="_blank" aria-label="Twitter" class="social-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.762l7.733-8.835L.734 2.25H7.26l4.266 5.636L18.245 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+          <a href="https://discord.com/invite/2t5sx5BCpB" target="_blank" aria-label="Discord" class="social-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057.1 18.081.114 18.104.130 18.116a19.873 19.873 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" />
+            </svg>
+          </a>
+          <a href="https://github.com/OpenGradient" target="_blank" aria-label="GitHub" class="social-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/opengradientlabs/" target="_blank" aria-label="LinkedIn"
+            class="social-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
         </div>
-    </footer>
+      </div>
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <h4>Products</h4>
+          <a href="https://hub.opengradient.ai/" target="_blank">Model Hub</a>
+          <a href="https://docs.opengradient.ai/developers/sdk/" target="_blank">On-Chain AI SDK</a>
+          <a href="https://memsync.ai/" target="_blank">MemSync</a>
+          <a href="https://www.twin.fun/" target="_blank">Twin.fun</a>
+          <a href="https://www.bitquant.io/" target="_blank">BitQuant</a>
+        </div>
+        <div class="footer-col">
+          <h4>Developers</h4>
+          <a href="https://docs.opengradient.ai/" target="_blank">Documentation</a>
+          <a href="https://github.com/OpenGradient" target="_blank">GitHub</a>
+          <a href="https://github.com/OpenGradient/BitQuant-Subnet" target="_blank">BitQuant Subnet</a>
+          <a href="https://chromewebstore.google.com/detail/memsync/ekhglfoplnmigdhkifhegcdjmjkbljom"
+            target="_blank">MemSync Extension</a>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="https://www.opengradient.ai/blog" target="_blank">Blog</a>
+          <a href="https://opengradient.medium.com/" target="_blank">Medium</a>
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5035111" target="_blank">Whitepaper</a>
+        </div>
+        <div class="footer-col">
+          <h4>Community</h4>
+          <a href="https://x.com/OpenGradient" target="_blank">X (Twitter)</a>
+          <a href="https://x.com/i/communities/1978779669693362400" target="_blank">X Community</a>
+          <a href="https://discord.com/invite/2t5sx5BCpB" target="_blank">Discord</a>
+          <a href="https://www.linkedin.com/company/opengradientlabs/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-container">
+        <span>© 2025 OpenGradient. All rights reserved.</span>
+        <span>The Network for Open Intelligence</span>
+      </div>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
